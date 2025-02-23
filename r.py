@@ -61,7 +61,7 @@ def save_keys():
         json.dump(keys, file)
 
 def create_random_key():
-    key = "LOST-" + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
+    key = "GOAT-" + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
     keys[key] = {"status": "valid"}
     save_keys()
     return key
@@ -137,7 +137,7 @@ def start_command(message):
     if str(message.chat.id) in admin_id:
         markup.add(admin_panel_button)
     markup.add(attack_button, myinfo_button, redeem_button,  bot_sitting_button)
-    bot.reply_to(message, "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 ⏤͟͟͞͞𝐋𝐎𝐒𝐓_𝐕𝐈𝐏_𝐃𝐃𝐎𝐒 🇮🇳!", reply_markup=markup)
+    bot.reply_to(message, "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 ⏤͟͟͞͞ 𝐆𝐎𝐀𝐓𝐱𝐃𝐃𝐎𝐒 ツ 🇮🇳!", reply_markup=markup)
 
 @bot.message_handler(func=lambda message: message.text == "🤖 BOT SITTING")
 def bot_sitting(message):
